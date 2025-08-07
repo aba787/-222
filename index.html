@@ -14,13 +14,31 @@
       direction: rtl;
     }
 
-    .site-header {
-      text-align: center;
-      padding: 30px;
-      background: #4b3b69;
-      color: #fff;
-    }
 
+.site-header {
+  background: linear-gradient(135deg, #5e4b8b, #4b3b69);
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.site-header h1 {
+  font-size: 64px;
+  font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+  margin-bottom: 10px;
+}
+
+.site-header p {
+  font-size: 22px;
+  font-weight: 400;
+  color: #f0e6ff;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+}
+
+    
     .courses {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -200,7 +218,6 @@
     <h1>آدا</h1>
     <p>موقع الدورات</p>
   </header>
-
   <!-- قسم الدورات -->
   <section class="courses">
     <div class="course-card" onclick="openModal('graphicCourse')">
